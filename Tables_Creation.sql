@@ -1,4 +1,4 @@
--- Data mezd a cen potravin za Českou republiku sjednocených na společné roky 2006 - 2018
+-- Primary Table – Data mezd a cen potravin za Českou republiku sjednocených na společné roky 2006 - 2018
 
 SELECT * FROM czechia_price ORDER BY date_from;
 SELECT * FROM czechia_payroll ORDER BY payroll_year;	
@@ -24,7 +24,7 @@ JOIN czechia_payroll_industry_branch cpib
 	ON cpay.industry_branch_code = cpib.code;
 
 
--- Dodatečná data o dalších evropských státech
+-- Secondary Table – Dodatečná data o dalších evropských státech
 
 SELECT * FROM t_jan_benacek_project_SQL_primary_final
 ORDER BY date_from, food_category;
