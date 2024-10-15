@@ -5,7 +5,7 @@ CREATE OR REPLACE VIEW avg_price_food AS
 SELECT
 	YEAR(date_to) AS year_price,
 	category_code,
-	ROUND(AVG(value), 2) AS avg_price
+	ROUND(AVG(avg_price), 2) AS avg_price
 FROM t_jan_benacek_project_SQL_primary_final
 GROUP BY category_code,
 		 year_price;
@@ -34,8 +34,7 @@ ROUND(  (apf.avg_price - apf2.avg_price) / apf2.avg_price * 100, 2) AS price_dif
 FROM avg_price_food apf
 JOIN avg_price_food apf2
 	ON apf.category_code = apf2.category_code
-	AND apf.year_price = apf2.year_price + 1
-;
+	AND apf.year_price = apf2.year_price + 1;
 
 -- Porovnání % a hodnoty změny sortimentu za celé období (tj. změna mezi roky 2006 a 2018)
  SELECT
