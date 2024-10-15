@@ -1,14 +1,11 @@
 -- Otázka č.4 Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
     
-    
 -- Prům. mzda v letech s rozdílem v % a s číselnou hodnotou změny
-    
 CREATE OR REPLACE VIEW avg_wage AS 
 SELECT
 	payroll_year,
-	ROUND(AVG(value)) AS avg_wage
+	ROUND(AVG(avg_wage)) AS avg_wage
 FROM t_jan_benacek_project_SQL_primary_final
-WHERE value_type_code = 5958
 GROUP BY payroll_year;
     
 CREATE OR REPLACE VIEW avg_wage_with_diff AS    
@@ -28,7 +25,7 @@ CREATE OR REPLACE VIEW avg_price_food AS
 SELECT
 	YEAR(date_to) AS year_price,
 	category_code,
-	ROUND(AVG(value), 2) AS avg_price
+	ROUND(AVG(avg_price), 2) AS avg_price
 FROM t_jan_benacek_project_SQL_primary_final
 GROUP BY category_code,
 		 year_price;
@@ -45,8 +42,7 @@ FROM avg_price_food apf
 JOIN avg_price_food apf2
 	ON apf.year_price = apf2.year_price + 1
 	AND apf.category_code = apf2.category_code
-GROUP BY apf.year_price
-;
+GROUP BY apf.year_price;
 
 SELECT
 apfsy.current_year AS year_to_compare,
