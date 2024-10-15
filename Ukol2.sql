@@ -5,9 +5,8 @@
 CREATE OR REPLACE VIEW avg_wage AS 
 SELECT
 	payroll_year,
-	ROUND(AVG(value)) AS avg_wage
+	ROUND(AVG(avg_wage)) AS avg_wage
 FROM t_jan_benacek_project_SQL_primary_final
-WHERE value_type_code = 5958
 GROUP BY payroll_year;
 
 
@@ -33,5 +32,4 @@ apfy.avg_price,
 ROUND( aw.avg_wage / apfy.avg_price, 2) AS no_of_units_per_wage
 FROM avg_wage aw
 JOIN avg_price_food_year apfy
-	ON aw.payroll_year = apfy.year_price
-	;
+	ON aw.payroll_year = apfy.year_price;
