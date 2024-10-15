@@ -1,3 +1,4 @@
+-- Discord - bejikaj#2628
 -- Otázka č.1 Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
     
 -- Průměrná hrubá mzda na zamce dle odvětví a let
