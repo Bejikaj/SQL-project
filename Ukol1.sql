@@ -5,15 +5,14 @@ CREATE OR REPLACE VIEW avg_wage_sector AS
 SELECT
 	industry_branch_code,
 	payroll_year,
-	ROUND(AVG(value)) AS avg_wage
+	ROUND(AVG(avg_wage)) AS avg_wage
 FROM t_jan_benacek_project_SQL_primary_final
-WHERE value_type_code = 5958
-	  AND industry_branch_code IS NOT NULL
+WHERE industry_branch_code IS NOT NULL
 GROUP BY payroll_year,
 		 industry_branch_code
 ORDER BY industry_branch_code,
          payroll_year;
-        
+
 
 -- % Změna hrubé mzdy v sektoru dle roku
 SELECT
