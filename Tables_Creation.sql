@@ -40,6 +40,3 @@ JOIN economies e ON e.country = c.country
 	WHERE c.continent = 'Europe'
 		AND e.`year` BETWEEN 2006 AND 2018
 ORDER BY c.`country`, e.`year`;
-
-SELECT * FROM t_jan_benacek_project_SQL_secondary_final;
-  
