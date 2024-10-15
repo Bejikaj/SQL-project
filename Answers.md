@@ -1,4 +1,4 @@
-**Úkolč.1 odpověď:** <br>
+**Úkol č.1 odpověď:** <br>
 Za sledované období ve všech odvětvích mzdy rostou v porovnání začátku a konce sledovaného období. Nejvyšší meziroční nárůst nastal mezi roky 2007 vs 2008 u odvětví Těžba a dobývání - došlo k nárůstu o 13,81%. Naopak nejvyšší meziroční pokles nastal u odvětví Peněžnictví a pojišťovnictví mezi roky 2013 vs 2012, došlo k poklesu o 8,91%.<br>
 
 Nejvyšší nárůst v celém sledovaném období v součtu hodnot nastal u oddělení Informační a komunikační činnosti - konkrétně o 20 733 CZK, nejmenší zase u Administrativní a podpůrné činnosti - nárůst pouze o 6 631 CZK.<br>
