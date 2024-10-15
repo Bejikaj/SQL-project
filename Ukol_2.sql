@@ -1,3 +1,4 @@
+-- Discord - bejikaj#2628
 -- Otázka č.2 Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 -- Price_category (Mléko polotučné pasterované - 114201, Chléb konzumní kmínový - 111301)
     
