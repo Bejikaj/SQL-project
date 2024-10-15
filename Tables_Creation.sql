@@ -1,3 +1,4 @@
+-- Discord - bejikaj#2628
 -- Primary Table – Data mezd a cen potravin za Českou republiku sjednocených na společné roky 2006 - 2018
 
 SELECT * FROM czechia_price ORDER BY date_from;
