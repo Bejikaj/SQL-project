@@ -1,3 +1,4 @@
+-- Discord - bejikaj#2628
 -- Otázka č.4 Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
     
 -- Prům. mzda v letech s rozdílem v % a s číselnou hodnotou změny
