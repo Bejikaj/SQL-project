@@ -1,3 +1,4 @@
+-- Discord - bejikaj#2628
 -- Otázka č.3 Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
 
 -- Průměrná cena sortimentu v jednotlivých letech
